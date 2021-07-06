@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+	<!--
+		Written by Majuntang
+		2021-07-06 18:47:00
+	-->
+	<head>
+		<meta charset="utf-8" content="width=device-width, initial-scale=1" />
+		<title>Majuntang</title>
+		<style>
+			@font-face
+			{
+				font-family: "Aileron";
+				src: url("font/aileron/Aileron-Light.otf") format('opentype');
+			}
+			/* * { margin: 0; padding: 0; box-sizing: border-box; } */
+			.body-content
+			{
+				max-width: 700px;
+				margin: auto;
+				padding: 10px;
+			}
+			
+			.body-lightmode
+			{
+				background-color: white;
+				color: black;
+			}
+
+			.body-darkmode
+			{
+				background-color: black;
+				color: lightgrey;
+			}
+
+			.article-size
+			{
+				margin-top: 85px;
+				font-size: 18px;
+				line-height: 1.6;
+			}
+
+			.inline-center
+			{
+				text-align: center;
+			}
+
+			.header-fixed
+			{
+				top: 0;
+				right: 0;
+				left: 0;
+				margin: 0;
+				width: 100%;
+				display: block;
+				position: fixed;
+				backdrop-filter: saturate(120%) blur(5px);
+				overflow: hidden;
+				user-select: none;
+			}
+
+			.main-header
+			{
+				margin: 5px;
+				user-select: text;
+			}
+
+			.navigation
+			{
+				font-size: 20px;
+				margin-bottom: 5px;
+				text-align: center;
+			}
+
+			.image-clamp
+			{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 80%;
+				height: auto;
+			}
+
+			.inlink
+			{
+				text-decoration: none;
+				font-family: Aileron;
+			}
+
+			/* unvisited link */
+			.inlink:link
+			{
+				color: gray;
+				transition-duration: 0.5s;
+			}
+
+			/* visited link */
+			.inlink:visited
+			{
+				color: gray;
+				transition-duration: 0.5s;
+			}
+
+			/* mouse over link */
+			.inlink:hover
+			{
+				color: darkgoldenrod;
+				transition-duration: 0.5s;
+			}
+
+			.switch-light-dark-link
+			{
+				color: darkgoldenrod;
+				text-decoration: none;
+				font-family: Aileron;
+			}
+
+			/* selected link */
+			.inlink:active
+			{
+			}
+
+			.text-emphasize
+			{
+				font-style: italic;
+			}
+
+			.text-raw-literal
+			{
+				white-space: pre-wrap;
+			}
+
+			.text-linefeed
+			{
+				white-space: pre-line;
+			}
+		</style>
+	</head>
+	
+	<body class="body-content body-lightmode">
+		<header class="header-fixed">
+			<h1 class="inline-center main-header">MAJUNTANG</h1>
+			<nav class="navigation">
+				<a class="inlink" href="index.html">Majuntang</a>
+				<span> | </span>
+				<a class="inlink" href="#">Project</a>
+				<span> | </span>
+				<a class="inlink" href="#">Story</a>
+				<span> | </span>
+				<a class="inlink" href="#">Movie</a>
+				<span> | </span>
+				<a class="inlink" href="#">Interactive</a>
+				<span> | </span>
+				<a class="switch-light-dark-link" onclick="SwitchDarkLightMode()">Dark/Light</a>
+			</nav>
+		</header>
+	
+		<article class="article-size">
+			<p>Time flies as he dreams in his dream, he lives, as the clouds drift by.</p>
+			<hr />
+			<p>Just like someone said many years ago,</p>
+			<blockquote cite="Majuntang">
+				“Majuntang will never be a conventional person.”
+			</blockquote>
+			<p class="text-emphasize">And I never intended to become one.</p>
+			<img class="image-clamp" src="E84.jpeg" alt="Photo of Our Protagonist" />
+		</article>
+	
+	
+		<footer>
+			<p class="inline-center">&#169;Majuntang 2021</p>
+		</footer>
+	
+		<script>
+			function SwitchDarkLightMode()
+			{
+				var element = document.body;
+				element.classList.toggle("body-darkmode");
+			}
+		</script>
+
+	</body>
+	
+</html>
