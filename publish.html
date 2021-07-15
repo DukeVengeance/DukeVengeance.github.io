@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<!--
+	Written by Majuntang
+	2021-07-15 00:05:31
+-->
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Majuntang</title>
+	<script type="text/javascript">
+        var theme = localStorage.getItem("theme");
+        var ec = document.documentElement.classList;
+        if (theme === "light") {
+            ec.add("theme-light");
+            ec.remove("theme-dark");
+        }
+        else if (theme === "dark") {
+            ec.add("theme-dark");
+            ec.remove("theme-light");
+        }
+        else {
+            ec.add("theme-light")
+            ec.remove("theme-dark");
+        }
+	</script>
+	<style>
+		/* Placed here because some browser are not *smart* enough to load css first, causing the site to blink */
+        /* Theme */
+        .theme-light
+        {
+            background-color: rgb(245, 245, 245);
+            color: black;
+            transition-duration: var(--bcc-transition-duration, 0s);
+        }
+
+        .theme-dark
+        {
+            background-color: #0d0d0d;
+            color: rgba(211, 211, 211, 0.8);
+            transition-duration: var(--bcc-transition-duration, 0s);
+        }
+	</style>
+	<script src="main.js" defer></script>
+	<link rel="stylesheet" href="font.css" />
+	<link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+	<header class="header-base">
+		<div class="header-title-block">
+			<div class="header-container-left"><a class="navigation-switch">&#9782;</a></div>
+			<div class="header-container-right"><a class="light-dark-switch">&#9728;</a><span> &nbsp;</span><a class="option-button">&#x2699;</a></div>
+			<p class="header-title">&nbsp;&nbsp;&nbsp;MAJUNTANG</p>
+		</div>
+		<nav class="navigation">
+			<a href="index.html">Majuntang</a>
+			<span> | </span>
+			<a href="#">Blog</a>
+			<span> | </span>
+			<a href="#">Story</a>
+			<span> | </span>
+			<a href="#">Movie</a>
+			<span> | </span>
+			<a href="#">Project</a>
+		</nav>
+	</header>
+
+	<main>
+		<article>
+			<div class="page">
+				<h1>MAJUNTANG</h1>
+					<p>Time flies as he dreams in his dream, he lives, as the clouds drift by.</p>
+					<hr />
+					<br />
+					<p>Just like someone said many years ago,</p>
+					<blockquote cite="Majuntang">
+						“Majuntang will never be a conventional person.”
+					</blockquote>
+				<br />
+					<p><em>And I never intended to become one.</em></p>
+					<img src="E84.jpeg" alt="Photo of Our Protagonist" />
+			</div>
+		</article>
+
+		<div class="page">
+			<h1>Browse More!</h1>
+			<hr />
+			<br />
+			<div class="card">
+				<div class="card-image-base">
+					<img src="E84.jpeg" alt="Photo of Our Protagonist" />
+				</div>
+				<div class="card-info-base">
+					<a href="#"><h2 class="card-info-title">Majuntang.com Is Under Construction!</h2></a>
+					<div class="card-info-meta-base">
+						<p class="card-info-meta-text">Majuntang 2021-07-15</p>
+						<p class="card-info-meta-tag-base">
+							<a href="#"><span>Experimental</span></a>
+							<a href="#"><span>Majuntang</span></a>
+						</p>
+					</div>
+					<div class="card-info-description-base">
+						<p>Most links are placeholders, but try switching Dark / Light via the upper right sun button!</p>
+						<p>Dark / Light mode are stored locally, you can clear the storage via the upper right gear button.</p>
+						<p>Images are adjusted more than colors to fit to dark mode, so hover over them in dark mode to see the original image!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page">
+			<h2>Also...</h2>
+			<p>Majuntang.com uses Responsive Design! Try view this website in another screen width!</p>
+		</div>
+	</main>
+
+	<footer>
+		<p>&#169;Majuntang 2021</p>
+	</footer>
+
+</body>
+
+</html>
