@@ -14,6 +14,8 @@ window.onload = function () {
 	for (var i = 0; i < items.length; ++i) {
 		items[i].addEventListener("click", ClearLocalStorage);
 	}
+
+	UpdateColorScheme(localStorage.getItem("theme"));
 }
 
 function SwitchDarkLightMode() {
@@ -42,6 +44,8 @@ function ApplyTheme(theme) {
 		ec.add("theme-light")
 		ec.remove("theme-dark");
 	}
+
+	UpdateColorScheme(theme);
 }
 
 function SwitchNavigationDisplay() {
@@ -57,4 +61,11 @@ function SwitchNavigationDisplay() {
 
 function ClearLocalStorage() {
 	localStorage.clear();
+}
+
+function UpdateColorScheme(scheme) {
+	if (scheme != "light" && scheme != "dark") {
+		scheme = "light";
+    }
+	document.documentElement.setAttribute("theme", scheme);
 }
