@@ -208,7 +208,7 @@ main
 {
 	font-size: 20px;
 	font-family: 'Times New Roman', serif;
-	padding: 1em 0.4em;
+	padding: 1em 1vw;
 	line-height: 1.4;
 	max-width: 1020px;
 	margin: auto;
@@ -226,6 +226,46 @@ main
 	transition-duration: var(--bcc-transition-duration);
 }
 
+.page hr
+{
+	margin: 0.2em 1em;
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 500px)
+{
+	.page
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.navigation
+	{
+		font-size: 18px;
+	}
+}
+
+/* Small devices */
+@media only screen and (min-width: 501px)
+{
+}
+
+/* Medium devices */
+@media only screen and (min-width: 767px)
+{
+}
+
+/* Large devices */
+@media only screen and (min-width: 992px)
+{
+}
+
+/* Extra large devices */
+@media only screen and (min-width: 1200px)
+{
+}
+
 .theme-dark .page
 {
 	background-color: #121212;
@@ -234,7 +274,7 @@ main
 .page p
 {
 	text-indent: 1em;
-	margin: 0.6em;
+	margin: 0.6em 1vw;
 }
 
 /*.page p:first-letter
@@ -319,7 +359,7 @@ main p:first-letter
 	background-color: rgba(0,0,0,0.05);
 	box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
 	border: 1px solid rgba(255,255,255,0.1);
-	border-radius: 8px;
+	border-radius: 4px;
 	overflow: hidden;
 }
 
