@@ -196,9 +196,9 @@ footer
 {
 	font-family: Aileron, sans-serif;
 	font-weight: 300;
-	font-size: 20px;
-	background: rgba(0,0,0,0);
-	margin: 1em 0;
+	font-size: 16px;
+	background: rgba(0, 0, 0, 0);
+	margin: 1em 0 0;
 	padding: 1em;
 	text-align: center;
 }
@@ -206,17 +206,17 @@ footer
 /* Content */
 main
 {
-	font-size: 24px;
+	font-size: 20px;
 	font-family: 'Times New Roman', serif;
 	padding: 1em 0.4em;
-	line-height: 1.6;
+	line-height: 1.4;
 	max-width: 1020px;
 	margin: auto;
 }
 
 .page
 {
-	padding: 1em 10% 2em;
+	padding: 1em 5vw 2em;
 	margin: 0 0 2em;
 	background-color: white;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
@@ -234,13 +234,13 @@ main
 .page p
 {
 	text-indent: 1em;
-	margin-bottom: 1em;
+	margin: 0.6em;
 }
 
-.page p:first-letter
+/*.page p:first-letter
 {
 	font-weight: bolder;
-}
+}*/
 
 /*
 main p:first-letter
@@ -255,23 +255,23 @@ main p:first-letter
 
 .page h1
 {
-	font-size: 38px;
-	margin-bottom: 0.1em;
+	font-size: 2.2rem;
+	margin-bottom: 0.2em;
 }
 
 .page h2
 {
-	font-size: 35px;
+	font-size: 1.8rem;
 }
 
 .page h3
 {
-	font-size: 30px;
+	font-size: 1.5rem;
 }
 
 .page h4
 {
-	font-size: 26px;
+	font-size: 1.2rem;
 }
 
 .page h1,
@@ -290,8 +290,13 @@ main p:first-letter
 	margin-bottom: 1em;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 80%;
+	max-width: calc(100% - 5vw);
 	height: auto;
+}
+
+.page a
+{
+	text-decoration: underline;
 }
 
 /* Card */
@@ -332,6 +337,11 @@ main p:first-letter
 .card p
 {
 	margin: 0;
+}
+
+.card a
+{
+	text-decoration: none;
 }
 
 .card-image-base
@@ -400,21 +410,23 @@ main p:first-letter
 
 /*.card-info-base */.card-info-meta-tag-base span
 {
-	background-color: white;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	/*background-color: white;*/
+	background-color: rgba(255,255,255,0.5);
+	/*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);*/
 	border: 1px solid rgba(255,255,255,0.1);
 	border-radius: 3px;
 	transition-property: background, box-shadow, border;
 	transition-duration: 0.3s, 0.5s;
 	transition-duration: var(--bcc-transition-duration), 0.5s;
-	padding: 0.5% 1%;
+	padding: 0.1% 1%;
 	margin: auto 0.1em;
 }
 
 /*.card-info-base */.card-info-meta-tag-base span:hover
 {
-	border: 1px solid rgba(255,255,255,0.3);
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	/*border: 1px solid rgba(255,255,255,0.3);*/
+	/*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);*/
+	text-decoration: underline;
 }
 
 .theme-dark /*.card-info-base */.card-info-meta-tag-base span
