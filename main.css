@@ -232,7 +232,7 @@ main
 }
 
 /* Extra small devices */
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 498px)
 {
 	.page
 	{
