@@ -271,6 +271,11 @@ main
 	background-color: #121212;
 }
 
+.page blockquote
+{
+	margin: 0em 0.8vw;
+}
+
 .page p
 {
 	text-indent: 1em;
