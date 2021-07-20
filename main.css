@@ -121,6 +121,9 @@ img
 
 .header-title
 {
+	text-shadow: white 0 0 3px;
+	transition-property: text-shadow;
+	transition-duration: 0.3s;
 	margin: 5px;
 	user-select: text;
 	font-family: 'Times New Roman', serif;
@@ -131,6 +134,11 @@ img
 	margin-block-end: 0.1em;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
+}
+
+.theme-dark .header-title
+{
+	text-shadow: none;
 }
 
 .light-dark-switch
@@ -357,12 +365,12 @@ main p:first-letter
 .card
 {
 	transition-property: background-color, box-shadow, border;
-	transition-duration: 0.3s, 0.5s;
-	transition-duration: var(--bcc-transition-duration), 0.5s;
+	transition-duration: 0.3s, 0.5s, 0.5s;
+	transition-duration: var(--bcc-transition-duration), 0.5s, 0.5s;
 	align-items: stretch;
 	margin: 1em 1%;
 	background-color: rgba(0,0,0,0.05);
-	box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+	/*box-shadow: 4px 4px 8px rgba(0,0,0,0.1);*/
 	border: 1px solid rgba(255,255,255,0.1);
 	border-radius: 4px;
 	overflow: hidden;
@@ -371,7 +379,8 @@ main p:first-letter
 .card:hover
 {
 	border: 1px solid rgba(255,255,255,0.3);
-	box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+	background-color: rgba(0, 0, 0, 0.03);
+	/*box-shadow: 4px 4px 8px rgba(0,0,0,0);*/
 }
 
 .card img:hover
